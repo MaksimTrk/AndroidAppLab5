@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="amber">#FAC775</color>
+    <color name="green_light">#9FE1CB</color>
+    <color name="green_main">#1D9E75</color>
+    <color name="md_theme_dark_background">#1C1C1E</color>
+    <color name="md_theme_dark_onPrimary">#04342C</color>
+    <color name="md_theme_dark_onPrimaryContainer">#9FE1CB</color>
+    <color name="md_theme_dark_primary">#5DCAA5</color>
+    <color name="md_theme_dark_primaryContainer">#0F6E56</color>
+    <color name="md_theme_dark_surface">#1C1C1E</color>
+    <color name="md_theme_dark_surfaceVariant">#2C2C2A</color>
+    <color name="md_theme_light_background">#FAFAFA</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_onPrimaryContainer">#04342C</color>
+    <color name="md_theme_light_primary">#1D9E75</color>
+    <color name="md_theme_light_primaryContainer">#9FE1CB</color>
+    <color name="md_theme_light_surface">#FAFAFA</color>
+    <color name="md_theme_light_surfaceVariant">#F1EFE8</color>
+    <color name="red_soft">#E24B4A</color>
+    <string name="analytics">Аналітика</string>
+    <string name="app_name">StepTracker</string>
+    <string name="profile">Профіль</string>
+    <string name="reset">Скинути</string>
+    <string name="start">Почати</string>
+    <string name="stop">Зупинити</string>
+    <string name="today">Сьогодні</string>
+    <style name="Theme.StepTracker" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_light_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_light_onPrimaryContainer</item>
+        <item name="android:colorBackground">@color/md_theme_light_background</item>
+        <item name="colorSurface">@color/md_theme_light_surface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_light_surfaceVariant</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

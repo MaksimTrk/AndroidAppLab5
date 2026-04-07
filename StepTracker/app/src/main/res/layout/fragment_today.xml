@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Ring Progress -->
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <com.steptracker.app.ui.today.RingProgressView
+                android:id="@+id/progress_ring"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_steps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorOnSurface" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="кроків"
+                    android:textSize="13sp"
+                    android:textColor="?attr/colorOnSurfaceVariant" />
+
+                <TextView
+                    android:id="@+id/tv_goal_pct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0% мети"
+                    android:textSize="12sp"
+                    android:textColor="@color/green_main"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Stats row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp"
+                android:backgroundTint="?attr/colorSurfaceVariant">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="12dp" android:gravity="center">
+                    <TextView android:id="@+id/tv_km" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="0.00"
+                        android:textSize="20sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="км" android:textSize="12sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="3dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp"
+                android:backgroundTint="?attr/colorSurfaceVariant">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="12dp" android:gravity="center">
+                    <TextView android:id="@+id/tv_kcal" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="0"
+                        android:textSize="20sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="ккал" android:textSize="12sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp"
+                android:backgroundTint="?attr/colorSurfaceVariant">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="12dp" android:gravity="center">
+                    <TextView android:id="@+id/tv_time" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="0:00"
+                        android:textSize="20sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="акт. хв" android:textSize="12sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_start"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="2"
+                android:layout_marginEnd="8dp"
+                android:text="@string/start"
+                android:textSize="16sp"
+                app:cornerRadius="12dp"
+                android:backgroundTint="@color/green_main" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_reset"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="@string/reset"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                app:cornerRadius="12dp" />
+        </LinearLayout>
+
+        <!-- Sensor info -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="?attr/colorOutlineVariant">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="12dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Датчик:" android:textSize="12sp"
+                    android:textColor="?attr/colorOnSurfaceVariant"/>
+                <TextView android:id="@+id/tv_sensor_type" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="—"
+                    android:textSize="13sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Акселерометр XYZ:" android:textSize="12sp"
+                    android:textColor="?attr/colorOnSurfaceVariant" android:layout_marginTop="6dp"/>
+                <TextView android:id="@+id/tv_accel" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="— — —"
+                    android:fontFamily="monospace" android:textSize="13sp" android:textColor="?attr/colorOnSurface"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Tip -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="?attr/colorOutlineVariant">
+            <TextView
+                android:id="@+id/tv_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:textColor="?attr/colorOnSurface"
+                android:text="Натисніть «Почати», щоб розпочати відлік" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

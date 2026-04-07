@@ -1,0 +1,168 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.steptracker.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+11-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:4:5-79
+11-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:4:22-76
+12    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" />
+12-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:5:5-85
+12-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:5:22-82
+13
+14    <uses-feature
+14-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:7:5-9:36
+15        android:name="android.hardware.sensor.stepcounter"
+15-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:8:9-59
+16        android:required="false" />
+16-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:9:9-33
+17    <uses-feature
+17-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:10:5-12:36
+18        android:name="android.hardware.sensor.stepdetector"
+18-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:11:9-60
+19        android:required="false" />
+19-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:12:9-33
+20
+21    <permission
+21-->[androidx.core:core:1.13.1] C:\Users\makst\.gradle\caches\transforms-4\e749c213f88922d853db54b314406977\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+22        android:name="com.steptracker.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22-->[androidx.core:core:1.13.1] C:\Users\makst\.gradle\caches\transforms-4\e749c213f88922d853db54b314406977\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+23        android:protectionLevel="signature" />
+23-->[androidx.core:core:1.13.1] C:\Users\makst\.gradle\caches\transforms-4\e749c213f88922d853db54b314406977\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+24
+25    <uses-permission android:name="com.steptracker.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25-->[androidx.core:core:1.13.1] C:\Users\makst\.gradle\caches\transforms-4\e749c213f88922d853db54b314406977\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.13.1] C:\Users\makst\.gradle\caches\transforms-4\e749c213f88922d853db54b314406977\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+26
+27    <application
+27-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:14:5-31:19
+28        android:allowBackup="true"
+28-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:15:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.13.1] C:\Users\makst\.gradle\caches\transforms-4\e749c213f88922d853db54b314406977\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+30        android:debuggable="true"
+31        android:extractNativeLibs="false"
+32        android:icon="@mipmap/ic_launcher"
+32-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:16:9-43
+33        android:label="@string/app_name"
+33-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:17:9-41
+34        android:roundIcon="@mipmap/ic_launcher_round"
+34-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:18:9-54
+35        android:supportsRtl="true"
+35-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:19:9-35
+36        android:testOnly="true"
+37        android:theme="@style/Theme.StepTracker" >
+37-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:20:9-49
+38        <activity
+38-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:22:9-29:20
+39            android:name="com.steptracker.app.MainActivity"
+39-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:23:13-41
+40            android:exported="true" >
+40-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:24:13-36
+41            <intent-filter>
+41-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:25:13-28:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:26:17-69
+42-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:26:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:27:17-77
+44-->C:\Users\makst\Desktop\Android\lab5\StepTracker\app\src\main\AndroidManifest.xml:27:27-74
+45            </intent-filter>
+46        </activity>
+47
+48        <provider
+48-->[androidx.emoji2:emoji2:1.3.0] C:\Users\makst\.gradle\caches\transforms-4\5d4ee7b7a8d477937e4d8eab9fb26718\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+49            android:name="androidx.startup.InitializationProvider"
+49-->[androidx.emoji2:emoji2:1.3.0] C:\Users\makst\.gradle\caches\transforms-4\5d4ee7b7a8d477937e4d8eab9fb26718\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+50            android:authorities="com.steptracker.app.androidx-startup"
+50-->[androidx.emoji2:emoji2:1.3.0] C:\Users\makst\.gradle\caches\transforms-4\5d4ee7b7a8d477937e4d8eab9fb26718\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+51            android:exported="false" >
+51-->[androidx.emoji2:emoji2:1.3.0] C:\Users\makst\.gradle\caches\transforms-4\5d4ee7b7a8d477937e4d8eab9fb26718\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+52            <meta-data
+52-->[androidx.emoji2:emoji2:1.3.0] C:\Users\makst\.gradle\caches\transforms-4\5d4ee7b7a8d477937e4d8eab9fb26718\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+53                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+53-->[androidx.emoji2:emoji2:1.3.0] C:\Users\makst\.gradle\caches\transforms-4\5d4ee7b7a8d477937e4d8eab9fb26718\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+54                android:value="androidx.startup" />
+54-->[androidx.emoji2:emoji2:1.3.0] C:\Users\makst\.gradle\caches\transforms-4\5d4ee7b7a8d477937e4d8eab9fb26718\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+55            <meta-data
+55-->[androidx.lifecycle:lifecycle-process:2.8.0] C:\Users\makst\.gradle\caches\transforms-4\ecd31612e12cbeb485370574e7176c72\transformed\lifecycle-process-2.8.0\AndroidManifest.xml:29:13-31:52
+56                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+56-->[androidx.lifecycle:lifecycle-process:2.8.0] C:\Users\makst\.gradle\caches\transforms-4\ecd31612e12cbeb485370574e7176c72\transformed\lifecycle-process-2.8.0\AndroidManifest.xml:30:17-78
+57                android:value="androidx.startup" />
+57-->[androidx.lifecycle:lifecycle-process:2.8.0] C:\Users\makst\.gradle\caches\transforms-4\ecd31612e12cbeb485370574e7176c72\transformed\lifecycle-process-2.8.0\AndroidManifest.xml:31:17-49
+58            <meta-data
+58-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+59                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+59-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+60                android:value="androidx.startup" />
+60-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+61        </provider>
+62
+63        <uses-library
+63-->[androidx.window:window:1.0.0] C:\Users\makst\.gradle\caches\transforms-4\9946a8bd90163c6c79d42ae5d6c7d1f0\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+64            android:name="androidx.window.extensions"
+64-->[androidx.window:window:1.0.0] C:\Users\makst\.gradle\caches\transforms-4\9946a8bd90163c6c79d42ae5d6c7d1f0\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+65            android:required="false" />
+65-->[androidx.window:window:1.0.0] C:\Users\makst\.gradle\caches\transforms-4\9946a8bd90163c6c79d42ae5d6c7d1f0\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+66        <uses-library
+66-->[androidx.window:window:1.0.0] C:\Users\makst\.gradle\caches\transforms-4\9946a8bd90163c6c79d42ae5d6c7d1f0\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+67            android:name="androidx.window.sidecar"
+67-->[androidx.window:window:1.0.0] C:\Users\makst\.gradle\caches\transforms-4\9946a8bd90163c6c79d42ae5d6c7d1f0\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+68            android:required="false" />
+68-->[androidx.window:window:1.0.0] C:\Users\makst\.gradle\caches\transforms-4\9946a8bd90163c6c79d42ae5d6c7d1f0\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+69
+70        <service
+70-->[androidx.room:room-runtime:2.6.1] C:\Users\makst\.gradle\caches\transforms-4\0100ab2267c5ef3f987ddda28272dc90\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+71            android:name="androidx.room.MultiInstanceInvalidationService"
+71-->[androidx.room:room-runtime:2.6.1] C:\Users\makst\.gradle\caches\transforms-4\0100ab2267c5ef3f987ddda28272dc90\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+72            android:directBootAware="true"
+72-->[androidx.room:room-runtime:2.6.1] C:\Users\makst\.gradle\caches\transforms-4\0100ab2267c5ef3f987ddda28272dc90\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+73            android:exported="false" />
+73-->[androidx.room:room-runtime:2.6.1] C:\Users\makst\.gradle\caches\transforms-4\0100ab2267c5ef3f987ddda28272dc90\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+74
+75        <receiver
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+76            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+77            android:directBootAware="false"
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+78            android:enabled="true"
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+79            android:exported="true"
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+80            android:permission="android.permission.DUMP" >
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+81            <intent-filter>
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+82                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+83            </intent-filter>
+84            <intent-filter>
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+85                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+86            </intent-filter>
+87            <intent-filter>
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+88                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+89            </intent-filter>
+90            <intent-filter>
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+91                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\makst\.gradle\caches\transforms-4\f68ff7ec47052194ac2defdb424fcb1c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+92            </intent-filter>
+93        </receiver>
+94    </application>
+95
+96</manifest>

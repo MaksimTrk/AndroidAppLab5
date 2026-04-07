@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\makst\\.gradle\\daemon\\8.6\\com.steptracker.app-mergeDebugResources-51:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\makst\\.gradle\\daemon\\8.6\\com.steptracker.app-main-54:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\makst\\.gradle\\daemon\\8.6\\com.steptracker.app-mergeDebugResources-51:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\makst\\.gradle\\daemon\\8.6\\com.steptracker.app-main-54:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\makst\\.gradle\\daemon\\8.6\\com.steptracker.app-mergeDebugResources-51:\\layout\\fragment_analytics.xml",
+        "source": "C:\\Users\\makst\\.gradle\\daemon\\8.6\\com.steptracker.app-main-54:\\layout\\fragment_analytics.xml"
+    },
+    {
+        "merged": "C:\\Users\\makst\\.gradle\\daemon\\8.6\\com.steptracker.app-mergeDebugResources-51:\\layout\\fragment_today.xml",
+        "source": "C:\\Users\\makst\\.gradle\\daemon\\8.6\\com.steptracker.app-main-54:\\layout\\fragment_today.xml"
+    },
+    {
+        "merged": "com.steptracker.app-mergeDebugResources-51:/layout/activity_main.xml",
+        "source": "com.steptracker.app-main-54:/layout/activity_main.xml"
+    }
+]

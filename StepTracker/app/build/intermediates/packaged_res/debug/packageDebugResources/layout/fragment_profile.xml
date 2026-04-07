@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Personal data card -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Особисті дані" android:textSize="14sp" android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface" android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="?attr/colorOutlineVariant">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Вага (кг)"
+                    android:layout_marginBottom="12dp"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:text="70"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Зріст (см)"
+                    android:layout_marginBottom="12dp"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text="170"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Вік"
+                    android:layout_marginBottom="12dp"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text="25"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Стать" android:textSize="13sp"
+                    android:textColor="?attr/colorOnSurfaceVariant" android:layout_marginBottom="6dp"/>
+
+                <RadioGroup android:id="@+id/rg_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/rb_male"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Чоловіча" android:checked="true" android:layout_marginEnd="16dp"/>
+                    <RadioButton android:id="@+id/rb_female"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Жіноча"/>
+                </RadioGroup>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Goal -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Денна ціль" android:textSize="14sp" android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface" android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="?attr/colorOutlineVariant">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:layout_marginBottom="4dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Кроків на день"
+                        android:textSize="13sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                    <TextView android:id="@+id/tv_goal_value" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="10 000 кроків"
+                        android:textSize="13sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface"/>
+                </LinearLayout>
+                <SeekBar android:id="@+id/sb_goal"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:max="38" android:progress="18"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:layout_marginTop="12dp" android:layout_marginBottom="4dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Довжина кроку"
+                        android:textSize="13sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                    <TextView android:id="@+id/tv_stride_value" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="75 см"
+                        android:textSize="13sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface"/>
+                </LinearLayout>
+                <SeekBar android:id="@+id/sb_stride"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:max="60" android:progress="35"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- BMI info card -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Ваші показники" android:textSize="14sp" android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface" android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="?attr/colorOutlineVariant">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:id="@+id/tv_bmi" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="ІМТ: —"
+                    android:textSize="14sp" android:textColor="?attr/colorOnSurface"
+                    android:layout_marginBottom="6dp"/>
+                <TextView android:id="@+id/tv_bmr" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="Базовий обмін: —"
+                    android:textSize="14sp" android:textColor="?attr/colorOnSurface"
+                    android:layout_marginBottom="6dp"/>
+                <TextView android:id="@+id/tv_goal_kcal" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="При досягненні мети: —"
+                    android:textSize="14sp" android:textColor="?attr/colorOnSurface"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Зберегти профіль"
+            android:textSize="16sp"
+            app:cornerRadius="12dp"
+            android:backgroundTint="@color/green_main"/>
+
+    </LinearLayout>
+</ScrollView>
